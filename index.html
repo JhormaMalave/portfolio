@@ -4,130 +4,140 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<nav>
-			<ul>
-				<li>Habilidades</li>
-				<li>Proyectos</li>
-				<li>Contacto</li>
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#skills" class="menu__link">Habilidades</a>
+				</li>
+				<li class="menu__item">
+					<a href="#projects" class="menu__link">Proyectos</a>
+				</li>
+				<li class="menu__item">
+					<a href="#contact_me" class="menu__link">Contacto</a>
+				</li>
 			</ul>
 		</nav>
-		<div>
-			<div>
-				<h1>jhorma oscar malave acevedo</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus impedit ducimus unde ullam magnam dolores nesciunt amet voluptas <strong>Qui officiis neque</strong> quis. Blanditiis similique.</p>
-				<a href="#">Ver mas</a>
+		<div class="info">
+			<div class="info__personal">
+				<h1 class="info__name">JHORMA OSCAR MALAVE ACEVEDO</h1>
+				<p class="info__descripction">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus impedit ducimus unde ullam magnam dolores nesciunt amet voluptas <strong>Qui officiis neque</strong> quis. Blanditiis similique.</p>
+				<a href="https://www.linkedin.com/in/jhorma-malave-212a3b1a9" target="_blank" class="info__link">Ver mas</a>
 			</div>
-			<div>
-				<figure>
-					<img src="" alt="">
+			<div class="info__image">
+				<figure class="figure">
+					<img src="./images/mi-foto.jpeg" class="img" alt="">
 				</figure>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section id="skills">
-			<h2>Habilidades</h2>
-			<div>
-				<h3>Descripción</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi iusto nulla, vero nemo in neque aliquam ratione, officia reiciendis deserunt ducimus quae quaerat praesentium natus odio similique doloribus illo.</p>
+		<section id="skills" class="skills">
+			<div class="container">
+				<h2>Habilidades</h2>
+				<div class="skills__description-area">
+					<h3 class="skills__description-name">Descripción</h3>
+					<p class="skills__description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi iusto nulla, vero nemo in neque aliquam ratione, officia reiciendis deserunt ducimus quae quaerat praesentium natus odio similique doloribus illo.</p>
+				</div>
+				<div class="skills__technologies-area">
+					<h3 class="skills__technologies-title">Tecnologías</h3>
+					<ul class="skills__technologies-items">
+						<li class="skills__technologies-item">Ruby On Rails</li>
+						<li class="skills__technologies-item">Ruby</li>
+						<li class="skills__technologies-item">MySQL</li>
+						<li class="skills__technologies-item">SQL</li>
+						<li class="skills__technologies-item">Git</li>
+						<li class="skills__technologies-item">Javascript</li>
+						<li class="skills__technologies-item">HTML 5</li>
+						<li class="skills__technologies-item">CSS 3</li>
+						<li class="skills__technologies-item">Bootstrap</li>			
+					</ul>
+				</div>
 			</div>
-			<div>
-				<h3>Tecnologías</h3>
-				<ul>
-					<div>
-						<li>Ruby On Rails</li>
-						<li>Ruby</li>
-						<li>MySQL</li>
-						<li>SQL</li>
-						<li>Git</li>
+		</section>
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2>Proyectos</h2>
+				<article class="projects__project">
+					<div class="project__description">
+						<h3>Aplicacion Web</h3>
+						<h4>Nombre:</h4>
+						<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
+						<h4>Tecnologías:</h4>
+						<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
+						<h4>Descripción:</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
 					</div>
-					<div>
-						<li>Javascript</li>
-						<li>HTML 5</li>
-						<li>CSS 3</li>
-						<li>Bootstrap</li>
-					</div>					
-				</ul>
+					<figure class="project__img-container">
+						<img src="./images/project1.png" class="project__img" alt="">
+					</figure>
+				</article>
+				<article class="projects__project">
+					<div class="project__description">
+						<h3>Aplicacion Web</h3>
+						<h4>Nombre:</h4>
+						<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
+						<h4>Tecnologías:</h4>
+						<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
+						<h4>Descripción:</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+					</div>
+					<figure class="project__img-container">
+						<img src="./images/project1.png" class="project__img" alt="">
+					</figure>
+				</article>
+				<article class="projects__project">
+					<div class="project__description">
+						<h3>Sitio Web</h3>
+						<h4>Nombre:</h4>
+						<p>Mi portafolio <3</p>
+						<h4>Tecnologías:</h4>
+						<p>HTML, CSS</p>
+						<h4>Descripción:</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+					</div>
+					<figure class="project__img-container">
+						<img src="./images/project1.png" class="project__img" alt="">
+					</figure>
+				</article>
 			</div>
 		</section>
-		<section id="proyects">
-			<h2>Proyectos</h2>
-			<article>
-				<div>
-					<h3>Aplicacion Web</h3>
-					<h4>Nombre:</h4>
-					<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
-					<h4>Tecnologías:</h4>
-					<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
-					<h4>Descripción:</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+		<section id="contact_me" class="contact-me">
+			<div class="container">
+				<h2>Contacto</h2>
+				<div class="contact-me__email-area">
+					<h3 class="contact-me__title">Correo:</h3>
+					<p class="contact-me__email">jhormamalave99@gmail.com</p>
 				</div>
-				<div>
-					<figure>
-						<img src="" alt="">
+				<div class="contact-me__socials">
+					<!-- https://feathericons.com/ -->
+					<figure class="contact-me__social-area">
+						<img src="./images/twitter.svg" alt="Icono de Twitter">
+					</figure>
+					<figure class="contact-me__social-area">
+						<img src="./images/linkedin
+						.svg" alt="Icono de linkedin">
+					</figure>
+					<figure class="contact-me__social-area">
+						<img src="./images/github
+						.svg" alt="Icono de github">
+					</figure>
+					<figure class="contact-me__social-area">
+						<img src="./images/gitlab
+						.svg" alt="Icono de gitlab">
 					</figure>
 				</div>
-			</article>
-			<article>
-				<div>
-					<h3>Aplicacion Web</h3>
-					<h4>Nombre:</h4>
-					<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
-					<h4>Tecnologías:</h4>
-					<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
-					<h4>Descripción:</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
-				</div>
-				<div>
-					<figure>
-						<img src="" alt="">
-					</figure>
-				</div>
-			</article>
-			<article>
-				<div>
-					<h3>Sitio Web</h3>
-					<h4>Nombre:</h4>
-					<p>Mi portafolio <3</p>
-					<h4>Tecnologías:</h4>
-					<p>HTML, CSS</p>
-					<h4>Descripción:</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
-				</div>
-				<div>
-					<figure>
-						<img src="" alt="">
-					</figure>
-				</div>
-			</article>
-		</section>
-		<section id="contact_us">
-			<h2>Contacto</h2>
-			<div>
-				<h3>Correo</h3>
-				<p>jhormamalave99@gmail.com</p>
-			</div>
-			<div>
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<figure>
-					<img src="" alt="">
-				</figure>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<p>Sitio Web Desarrollado por <strong>Jhorma Malave</strong> - 2020</p>
+	<footer class="footer">
+		<p class="footer__text">Pagina Web Desarrollado por
+		<p class="footer__name">Jhorma Malave</p>
+		<p class="footer__year">2020</p>
 	</footer>
 </body>
 </html>
