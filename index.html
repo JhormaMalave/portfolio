@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="header">
-		<nav>
+		<nav class="container">
 			<ul class="menu">
 				<li class="menu__item">
 					<a href="#skills" class="menu__link">Habilidades</a>
@@ -24,38 +24,45 @@
 		</nav>
 		<div class="info">
 			<div class="info__personal">
-				<h1 class="info__name">JHORMA OSCAR MALAVE ACEVEDO</h1>
-				<p class="info__descripction">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus impedit ducimus unde ullam magnam dolores nesciunt amet voluptas <strong>Qui officiis neque</strong> quis. Blanditiis similique.</p>
+				<h1 class="info__name">JHORMA OSCAR<br>MALAVE ACEVEDO</h1>
+				<p class="info__descripction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit eius dolor iure obcaecati molestias quo laboriosam maiores accusamus sint quod voluptate fugit eligendi sapiente eveniet, consequuntur incidunt! Sint, vel? <strong>Ingeniería informática</strong>...</p>
 				<a href="https://www.linkedin.com/in/jhorma-malave-212a3b1a9" target="_blank" class="info__link">Ver mas</a>
 			</div>
 			<div class="info__image">
 				<figure class="figure">
-					<img src="./images/mi-foto.jpeg" class="img" alt="">
+					<img src="./images/mi-foto.jpg" class="img" alt="">
 				</figure>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section id="skills" class="skills">
+		<section id="skills">
 			<div class="container">
 				<h2>Habilidades</h2>
-				<div class="skills__description-area">
-					<h3 class="skills__description-name">Descripción</h3>
-					<p class="skills__description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi iusto nulla, vero nemo in neque aliquam ratione, officia reiciendis deserunt ducimus quae quaerat praesentium natus odio similique doloribus illo.</p>
-				</div>
-				<div class="skills__technologies-area">
-					<h3 class="skills__technologies-title">Tecnologías</h3>
-					<ul class="skills__technologies-items">
-						<li class="skills__technologies-item">Ruby On Rails</li>
-						<li class="skills__technologies-item">Ruby</li>
-						<li class="skills__technologies-item">MySQL</li>
-						<li class="skills__technologies-item">SQL</li>
-						<li class="skills__technologies-item">Git</li>
-						<li class="skills__technologies-item">Javascript</li>
-						<li class="skills__technologies-item">HTML 5</li>
-						<li class="skills__technologies-item">CSS 3</li>
-						<li class="skills__technologies-item">Bootstrap</li>			
-					</ul>
+				<div class="skills">
+					<div class="skills__description-area">
+						<h3 class="skills__description-name">Descripción</h3>
+						<p class="skills__description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi iusto nulla, vero nemo in neque aliquam ratione, officia reiciendis deserunt ducimus quae quaerat praesentium natus odio similique doloribus illo.</p>
+					</div>
+					<div class="skills__technologies-area">
+						<h3 class="skills__technologies-title">Tecnologías</h3>
+						<ul class="skills__technologies-items">
+							<div>
+								<li class="skills__technologies-item">Ruby On Rails</li>
+								<li class="skills__technologies-item">Ruby</li>
+								<li class="skills__technologies-item">MySQL</li>
+								<li class="skills__technologies-item">SQL</li>
+								<li class="skills__technologies-item">Git</li>
+							</div>
+							<div>
+								<li class="skills__technologies-item">Javascript</li>
+								<li class="skills__technologies-item">HTML 5</li>
+								<li class="skills__technologies-item">CSS 3</li>
+								<li class="skills__technologies-item">Bootstrap</li>			
+							</div>
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -66,11 +73,11 @@
 					<div class="project__description">
 						<h3>Aplicacion Web</h3>
 						<h4>Nombre:</h4>
-						<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
+						<p>Aplicación web para la gestión del departamento de bienes nacionales de la UPTTMBI.</p>
 						<h4>Tecnologías:</h4>
-						<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
+						<p>Ruby On Rails, Bootstrap, CSS, HTML, Javascript (Vanilla), MySQL</p>
 						<h4>Descripción:</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+						<p>Aplicación encagada de gestionar los bienes nacionales de la Universidad Politécnica Territorial del Estado Trujillo "MBI", los equipos, el mobiliario, sedes a los que pertenecen, el estado en el que se encuetran y más...</p>
 					</div>
 					<figure class="project__img-container">
 						<img src="./images/project1.png" class="project__img" alt="">
@@ -80,28 +87,29 @@
 					<div class="project__description">
 						<h3>Aplicacion Web</h3>
 						<h4>Nombre:</h4>
-						<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera</p>
+						<p>Sistema automatizado para el control de estudiantes y personal del Liceo Bolivariano "Rafael Rangel" de Valera.</p>
 						<h4>Tecnologías:</h4>
 						<p>Ruby On Rails, Skeleton, CSS, HTML, Javascript (Vanilla), MySQL</p>
 						<h4>Descripción:</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+						<p>La aplicación web se encargaba de gestionar; el control estudiantil, inscripciones, control de calificaciones, representantes, asi como el control del personal de dicha institucion ya sea docente, administrativo u obrero.</p>
+						<a href="https://gitlab.com/JhormaMalave/rafael-rangel-in-rails" target="_blank" class="project__link">Ver Codigo</a>
 					</div>
 					<figure class="project__img-container">
-						<img src="./images/project1.png" class="project__img" alt="">
+						<img src="./images/project2.png" class="project__img" alt="">
 					</figure>
 				</article>
 				<article class="projects__project">
 					<div class="project__description">
 						<h3>Sitio Web</h3>
 						<h4>Nombre:</h4>
-						<p>Mi portafolio <3</p>
+						<p>Portafolío Personal.</p>
 						<h4>Tecnologías:</h4>
 						<p>HTML, CSS</p>
 						<h4>Descripción:</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima asperiores sequi ipsa nam voluptate ipsam ipsum, distinctio facilis necessitatibus expedita sint numquam eius aperiam, ab odio voluptatum quod velit esse.</p>
+						<p>Portafolio personal desarrollado unicamente con HTML y CSS, haciendo el mejor uso que ofrecen ambos lenguajes, por HTML una estructura semanticamente correcta y aprovenchando la herramientas que ofrece CSS para el desarrollo de sitios Responsive sin el uso de librerias externas.</p>
 					</div>
 					<figure class="project__img-container">
-						<img src="./images/project1.png" class="project__img" alt="">
+						<img src="./images/project3.png" class="project__img" alt="">
 					</figure>
 				</article>
 			</div>
@@ -114,30 +122,33 @@
 					<p class="contact-me__email">jhormamalave99@gmail.com</p>
 				</div>
 				<div class="contact-me__socials">
+					<figure class="contact-me__social-area">
+						<a href="https://twitter.com/JhormaMalave" target="_blank">
+							<img src="./images/twitter.svg" alt="Icono de Twitter">
+						</a>
+					</figure>
+					<figure class="contact-me__social-area">
+						<a href="https://www.linkedin.com/in/jhorma-malave-212a3b1a9" target="_blank">
+							<img src="./images/linkedin.svg" alt="Icono de linkedin">
+						</a>
+					</figure>
+					<figure class="contact-me__social-area">
+						<a href="https://github.com/JhormaMalave" target="_blank">
+							<img src="./images/github.svg" alt="Icono de github">
+						</a>
+					</figure>
+					<figure class="contact-me__social-area">
+						<a href="https://gitlab.com/JhormaMalave" target="_blank">
+							<img src="./images/gitlab.svg" alt="Icono de gitlab">
+						</a>
+					</figure>
 					<!-- https://feathericons.com/ -->
-					<figure class="contact-me__social-area">
-						<img src="./images/twitter.svg" alt="Icono de Twitter">
-					</figure>
-					<figure class="contact-me__social-area">
-						<img src="./images/linkedin
-						.svg" alt="Icono de linkedin">
-					</figure>
-					<figure class="contact-me__social-area">
-						<img src="./images/github
-						.svg" alt="Icono de github">
-					</figure>
-					<figure class="contact-me__social-area">
-						<img src="./images/gitlab
-						.svg" alt="Icono de gitlab">
-					</figure>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
-		<p class="footer__text">Pagina Web Desarrollado por
-		<p class="footer__name">Jhorma Malave</p>
-		<p class="footer__year">2020</p>
+		<p class="footer__text">Pagina Web Desarrollado por <strong>Jhorma Malave</strong> 2020</p>
 	</footer>
 </body>
 </html>
